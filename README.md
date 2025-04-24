@@ -1,7 +1,7 @@
 ## Hi there 👋
 
 <!--
-**bwallac1/bwallac1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**bwallac1/bwallac1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.--!>
 
 Bryan Wallace, M.Ed, is a transformative leader in the realm of STEM education, driven by a passion for innovation and community empowerment. With a diverse background in education and leadership, Bryan has honed his skills and expertise, preparing him to found and lead Collaborative Community Learning Labs (CoLLabs).
 
@@ -25,4 +25,4 @@ With a wealth of experience and a deep-rooted commitment to community empowermen
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
--->
+
