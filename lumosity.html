@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumosity Redesign Case Study</title>
+    <title>My Design Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,64 +12,193 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+        .project-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-0.5rem);
+            box-shadow: 0 12px 16px -1px rgba(0, 0, 0, 0.1), 0 4px 8px -1px rgba(0, 0, 0, 0.08);
+        }
+        .project-title {
+            color: #1e40af;
+        }
+        .project-summary {
+            color: #6b7280;
+        }
+        .view-project-button {
+            background-color: #f97316;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .view-project-button:hover {
+            background-color: #ed8936;
+        }
+        .section-header {
+            color: #1e40af;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 2.25rem;
+            letter-spacing: -0.02em;
+        }
+
+        /* Styles for Lumosity section */
+        #lumosity-case-study {
+            background-color: #f0f4f8;
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+            border-radius: 1rem;
+            margin-bottom: 6rem;
+            background-image: url('path/to/lumosity_bg_image.jpg'); /* Replace with actual image path */
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            background-color: rgba(240, 244, 248, 0.8); /* Light blue with opacity */
+        }
+        #lumosity-case-study h2 {
+            color: #1e40af;
+        }
+        #lumosity-case-study p {
+            color: #4b5563;
+        }
+        #lumosity-reflection {
+            background-color: white;
+            padding: 3rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            margin-top: 4rem;
+        }
+
+        /* Styles for e-commerce section */
+        #ecommerce-project {
+            background-color: #fff7ed;
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+            border-radius: 1rem;
+            margin-bottom: 6rem;
+             background-image: url('path/to/ecommerce_bg_image.jpg'); /* Replace with actual image path */
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            background-color: rgba(255, 247, 237, 0.7); /* Light orange with opacity */
+        }
+        #ecommerce-project h2 {
+            color: #1e40af;
+        }
+        #ecommerce-project p{
+             color: #4b5563;
+        }
+        #ecommerce-reflection {
+            background-color: white;
+            padding: 3rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            margin-top: 4rem;
+        }
+
     </style>
 </head>
 <body class="bg-gray-100">
-    <header class="bg-teal-500 text-white py-6 px-4 sm:px-6 lg:px-8">
+    <header class="bg-gradient-to-r from-blue-500 to-orange-500 text-white py-6 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto text-center">
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold">Redesigning Lumosity: Addressing Inequalities</h1>
-            <p class="mt-2 text-lg sm:text-xl">A Case Study</p>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold">My Design Portfolio</h1>
+            <p class="mt-2 text-lg sm:text-xl">Welcome to my collection of projects.</p>
         </div>
     </header>
 
     <main class="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
         <section class="mb-12">
-            <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-6">Introduction</h2>
+            <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-6">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="project-card">
+                    <div class="p-6">
+                        <h3 class="project-title text-2xl font-semibold mb-4">Redesigning Lumosity: Addressing Inequalities</h3>
+                        <p class="project-summary text-gray-700 text-lg sm:text-xl leading-relaxed mb-4">
+                            A case study on redesigning the Lumosity platform to be more inclusive and equitable.
+                        </p>
+                       
+                    </div>
+                     <div class="p-6">
+                         <a href="#lumosity-case-study" class="view-project-button">
+                            View Project
+                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1.5 w-5 h-5"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                         </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="p-6">
+                        <h3 class="project-title text-2xl font-semibold mb-4">E-commerce Website Design</h3>
+                        <p class="project-summary text-gray-700 text-lg sm:text-xl leading-relaxed mb-4">
+                            Designed and developed a modern e-commerce website for a local business.
+                        </p>
+                       
+                    </div>
+                    <div class="p-6">
+                         <a href="#ecommerce-project" class="view-project-button">
+                            View Project
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1.5 w-5 h-5"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lumosity-case-study" class="">
+            <h2 class="section-header">Redesigning Lumosity: Addressing Inequalities</h2>
             <p class="text-gray-700 text-lg sm:text-xl leading-relaxed">
-                Lumosity is a popular brain-training platform designed to improve cognitive skills. However, its existing design may not fully address the needs of racially and socioeconomically diverse users. This project aimed to redesign Lumosity to be more inclusive and equitable, specifically focusing on mitigating racial and income disparities.
+                Lumosity is a brain-training platform. This project aimed to redesign it to be more inclusive and equitable, focusing on racial and income disparities.
             </p>
         </section>
 
         <section class="mb-12">
-            <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-6">Problem</h2>
+            <h2 class="text-2xl sm:text-3xl font-semibold text-blue-800 mb-6">Problem & Solution</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Racial Inequality</h3>
-                    <p class="text-gray-700 text-lg sm:text-xl leading-relaxed">
-                        Current Lumosity games may lack cultural relevance, disengaging users from diverse backgrounds.
-                    </p>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Problem</h3>
+                    <ul class="list-disc list-inside text-gray-700 text-lg sm:text-xl leading-relaxed">
+                        <li>Lack of cultural relevance in games.</li>
+                        <li>Membership costs limiting access for low-income users.</li>
+                    </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Income Inequality</h3>
-                    <p class="text-gray-700 text-lg sm:text-xl leading-relaxed">
-                        Membership costs can limit access for low-income individuals.
-                    </p>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Solution</h3>
+                    <ul class="list-disc list-inside text-gray-700 text-lg sm:text-xl leading-relaxed">
+                        <li>Free Simplified Reports</li>
+                        <li>Culturally Relevant Games</li>
+                        <li>Personalized Social Play</li>
+                        <li>Mindfulness Game Category</li>
+                        <li>Game Recommendation System</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <section class="mb-12">
-            <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-6">Solution</h2>
-            <p class="text-gray-700 text-lg sm:text-xl leading-relaxed mb-8">
-                Our user-centered redesign focused on these key features:
-            </p>
+            <h2 class="text-2xl sm:text-3xl font-semibold text-blue-800 mb-6">Key Features & Visuals</h2>
             <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
                 <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
                     <div>
-                        <h3 class="text-xl font-semibold text-teal-600 mb-3">Free Simplified Reports</h3>
+                        <h3 class="text-xl font-semibold text-orange-600 mb-3">Free Simplified Reports</h3>
                         <p class="text-gray-700 text-lg sm:text-xl leading-relaxed mb-4">
-                            This feature addresses income inequality by providing essential progress tracking for all users.
+                            Essential progress tracking for all users.
                         </p>
                          <img src="path/to/simplified_reports_image.png" alt="Free Simplified Reports" class="rounded-md mb-4">
-                       
                     </div>
                      <p class="text-gray-600 text-sm">Image of the free simplified reports interface.</p>
                 </div>
                 <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
                     <div>
-                        <h3 class="text-xl font-semibold text-teal-600 mb-3">Cultural Contexts in Games</h3>
+                        <h3 class="text-xl font-semibold text-orange-600 mb-3">Cultural Contexts in Games</h3>
                         <p class="text-gray-700 text-lg sm:text-xl leading-relaxed mb-4">
-                            This feature enhances engagement for diverse users by incorporating culturally relevant elements into the games.
+                           Culturally relevant games for enhanced engagement.
                         </p>
                          <img src="path/to/cultural_games_image.png" alt="Cultural Contexts in Games" class="rounded-md mb-4">
                     </div>
@@ -77,9 +206,9 @@
                 </div>
                  <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
                     <div>
-                        <h3 class="text-xl font-semibold text-teal-600 mb-3">Personalized Social Play</h3>
+                        <h3 class="text-xl font-semibold text-orange-600 mb-3">Personalized Social Play</h3>
                         <p class="text-gray-700 text-lg sm:text-xl leading-relaxed mb-4">
-                            This feature fosters a supportive community by connecting users with similar backgrounds.
+                            Connecting users with similar backgrounds.
                          </p>
                          <img src="path/to/social_play_image.png" alt="Personalized Social Play" class="rounded-md mb-4">
                     </div>
@@ -87,16 +216,16 @@
                 </div>
                 <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
                     <div>
-                         <h3 class="text-xl font-semibold text-teal-600 mb-3">Mindfulness Game Category</h3>
-                         <p class="text-gray-700 text-lg sm:text-xl leading-relaxed mb-4">This feature introduces games focused on mindfulness and social-emotional skills.</p>
+                         <h3 class="text-xl font-semibold text-orange-600 mb-3">Mindfulness Game Category</h3>
+                         <p class="text-gray-700 text-lg sm:text-xl leading-relaxed mb-4">Games for mindfulness and social-emotional skills.</p>
                          <img src="path/to/mindfulness_games.png" alt="Mindfulness Game Category" class="rounded-md mb-4">
                     </div>
                     <p class="text-gray-600 text-sm">Image of a mindfulness game.</p>
                 </div>
                 <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
                     <div>
-                        <h3 class="text-xl font-semibold text-teal-600 mb-3">Game Recommendation System</h3>
-                        <p class="text-gray-700 text-lg sm:text-xl leading-relaxed mb-4">This feature provides personalized game suggestions based on user challenges.</p>
+                        <h3 class="text-xl font-semibold text-orange-600 mb-3">Game Recommendation System</h3>
+                        <p class="text-gray-700 text-lg sm:text-xl leading-relaxed mb-4">Personalized game suggestions.</p>
                         <img src="path/to/game_recommendation.png" alt="Game Recommendation System" class="rounded-md mb-4">
                     </div>
                     <p class="text-gray-600 text-sm">Image of the game recommendation system interface.</p>
@@ -105,53 +234,33 @@
         </section>
 
         <section class="mb-12">
-            <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-6">Design Process</h2>
+            <h2 class="text-2xl sm:text-3xl font-semibold text-blue-800 mb-6">Design Process & Outcome</h2>
             <p class="text-gray-700 text-lg sm:text-xl leading-relaxed mb-8">
-                Our iterative design process involved user testing and feedback at each stage.
+                An iterative, user-centered design process led to a final prototype that prioritizes inclusivity and accessibility.
             </p>
-            <div class="space-y-4">
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-800">Initial Prototype</h3>
-                    <p class="text-gray-700 text-lg sm:text-xl leading-relaxed">
-                        We created mid-fidelity prototypes based on initial ideas and identified gaps in the existing Lumosity design.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-800">First Iteration</h3>
-                    <p class="text-gray-700 text-lg sm:text-xl leading-relaxed">
-                        We made changes based on initial user feedback and input, focusing on improving usability and addressing specific pain points.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-800">Second Iteration</h3>
-                    <p class="text-gray-700 text-lg sm:text-xl leading-relaxed">
-                        We incorporated insights from readings on UI design principles and learning science, further refining the prototypes.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-800">Final Prototype</h3>
-                    <p class="text-gray-700 text-lg sm:text-xl leading-relaxed">
-                        The final design reflects a comprehensive understanding of user needs and best practices in UI/UX design.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-12">
-            <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-6">Outcome</h2>
-            <p class="text-gray-700 text-lg sm:text-xl leading-relaxed mb-8">
-                The final prototype incorporates UI design principles to ensure a user-friendly and engaging experience.
-            </p>
-             <a href="https://www.figma.com/proto/aufq8UXPGqWGoGHvZyCqxx/final-prototype?node-id=40-3696&t=AZxGUu56hcgcy8Wz-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=40%3A3696" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 text-lg sm:text-xl inline-flex items-center">
+            <a href="https://www.figma.com/proto/aufq8UXPGqWGoGHvZyCqxx/final-prototype?node-id=40-3696&t=AZxGUu56hcgcy8Wz-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=40%3A3696" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 text-lg sm:text-xl inline-flex items-center">
                 View Final Prototype
                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1.5 w-5 h-5"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
         </section>
 
-        <section>
-            <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-6">Reflection</h2>
+        <section id="lumosity-reflection" class="mb-12">
+            <h2 class="text-2xl sm:text-3xl font-semibold text-blue-800 mb-6">Reflection</h2>
             <p class="text-gray-700 text-lg sm:text-xl leading-relaxed">
                 This project demonstrates the power of user-centered design to promote more equitable digital experiences. The iterative process, incorporating user feedback and learning science, led to a Lumosity redesign that is more accessible and inclusive. We learned that early user feedback can sometimes be too general to drive specific design changes, and that it’s essential to balance user input with design expertise and creativity. Through consistent refinement and a commitment to applying UI principles, we were able to significantly improve the prototype's consistency, usability, and overall professionalism.
+            </p>
+        </section>
+
+        <section id="ecommerce-project" class="">
+             <h2 class="section-header">E-commerce Website Design</h2>
+            <p class="text-gray-700 text-lg sm:text-xl leading-relaxed">
+                Designed and developed a modern e-commerce website for a local business, with a focus on user experience and visual appeal.
+            </p>
+        </section>
+         <section id="ecommerce-reflection" class="mb-12">
+            <h2 class="text-2xl sm:text-3xl font-semibold text-blue-800 mb-6">Reflection</h2>
+            <p class="text-gray-700 text-lg sm:text-xl leading-relaxed">
+               This project was a deep dive into creating a seamless online shopping experience. I focused on intuitive navigation, clear product presentation, and a streamlined checkout process.  The positive feedback from the business owner and their customers validated the effectiveness of the design решения.
             </p>
         </section>
     </main>
